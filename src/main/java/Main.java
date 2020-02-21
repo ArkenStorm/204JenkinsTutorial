@@ -34,9 +34,11 @@ public class Main {
                 case "fibonacci":
                     a = scanner.nextInt();
                     System.out.println(calc.fibonacciNumberFinder(a));
+                    break;
                 case "intToBinary":
                     a = scanner.nextInt();
                     System.out.println(calc.intToBinaryNumber(a));
+                    break;
             }
         } while (!command.equals("exit"));
     }
