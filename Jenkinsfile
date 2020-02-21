@@ -5,7 +5,7 @@ pipeline {
         jdk 'JDK 8'
     }
     environment {
-            registry = "ArkenStorm/204JenkinsTutorial"
+            registry = "taylorw1/jenkins_calculator"
             registryCredential = 'dockerhub'
             dockerImage=''
     }
