@@ -1,14 +1,13 @@
-environment {
-        registry = "ArkenStorm/204JenkinsTutorial"
-        registryCredential = 'dockerhub'
-        dockerImage=''
-}
-
 pipeline {
     agent any
     tools {
         maven 'apache maven 3.6.3'
         jdk 'JDK 8'
+    }
+    environment {
+            registry = "ArkenStorm/204JenkinsTutorial"
+            registryCredential = 'dockerhub'
+            dockerImage=''
     }
     stages {
         stage ('Clean') {
