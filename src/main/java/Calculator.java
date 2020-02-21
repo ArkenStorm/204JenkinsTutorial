@@ -56,6 +56,7 @@ class Calculator {
      */
     String intToBinaryNumber(int n) {
         return Integer.toBinaryString(n);
+        
     }
 
     /*
