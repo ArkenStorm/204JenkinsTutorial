@@ -73,10 +73,10 @@ pipeline {
         }
     }
     post {
-    	failure{
-              mail to: ‘taylorcwhitlock@gmail.com’,
-              subject: “Failed Pipeline: ${currentBuild.fullDisplayName}”,
-              body: “Something is wrong with ${env.BUIL_URL}”
+    	failure {
+              mail to: 'taylorcwhitlock@gmail.com',
+              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+              body: "Something is wrong with ${env.BUIL_URL}"
         }
     }
 }
